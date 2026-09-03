@@ -374,6 +374,10 @@ img {
   transition: border-color 0.25s ease, transform 0.25s ease;
 }
 
+a.card {
+  cursor: pointer;
+}
+
 .card:hover {
   border-color: var(--accent);
   transform: translateY(-6px);
@@ -416,6 +420,17 @@ img {
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
   color: var(--accent);
+}
+
+.card__link-hint {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--text-dim);
+  transition: color 0.25s ease;
+}
+
+.card:hover .card__link-hint {
+  color: var(--text-muted);
 }
 
 /* ---------- Achievements ---------- */
